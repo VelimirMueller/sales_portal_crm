@@ -11,7 +11,7 @@ const root = document.getElementById("root");
 ReactDOM.createRoot(root).render(
   <AppLayout>
     <BrowserRouter>
-      <div class="w-full h-full">
+      <div className="w-full h-full">
         <AppRoutes />
       </div>
     </BrowserRouter>

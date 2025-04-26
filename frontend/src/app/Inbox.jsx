@@ -4,19 +4,19 @@ import AppGridCard from "../components/card/AppGridCard";
 function Inbox () {
   return (
     <AppGridLayout>
-      <AppGridCard isLarge={true}>
+      <AppGridCard>
         1
       </AppGridCard>
 
-      <AppGridCard>
+      <AppGridCard isLarge={true}>
         2
       </AppGridCard>
 
-      <AppGridCard isLarge={true}>
+      <AppGridCard>
         3
       </AppGridCard>
       
-      <AppGridCard>
+      <AppGridCard isLarge={true}>
         4
       </AppGridCard>
     </AppGridLayout>

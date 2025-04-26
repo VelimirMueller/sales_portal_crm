@@ -4,12 +4,12 @@ import MenuButton from './MenuButton';
 
 function NavBar () {
     return (
-        <div class="flex items-center justify-between">
-            <div class="flex items-center">
+        <div className="flex items-center justify-between">
+            <div className="flex items-center">
                 <NavLogo />
                 <NavGreeting />
             </div>
-            <div class="flex items-center h-16 rounded-full justify-end">
+            <div className="flex items-center h-16 rounded-full justify-end">
                 <MenuButton />
             </div>
         </div>

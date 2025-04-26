@@ -15,7 +15,7 @@ function Dashboard() {
       <AppGridCard isLarge={true}>
         3
       </AppGridCard>
-      
+
       <AppGridCard>
         4
       </AppGridCard>
