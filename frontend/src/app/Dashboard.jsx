@@ -1,9 +1,25 @@
+import AppGridLayout from "../components/container/AppGridLayout";
+import AppGridCard from "../components/card/AppGridCard";
+
 function Dashboard() {
   return (
-    <div>
-      <h1 class="text-8xl">Dashboard</h1>
-      <p>Welcome to the dashboard!</p>
-    </div>
+    <AppGridLayout>
+      <AppGridCard isLarge={true}>
+        1
+      </AppGridCard>
+
+      <AppGridCard>
+        2
+      </AppGridCard>
+
+      <AppGridCard isLarge={true}>
+        3
+      </AppGridCard>
+      
+      <AppGridCard>
+        4
+      </AppGridCard>
+    </AppGridLayout>
   );
 }
 
