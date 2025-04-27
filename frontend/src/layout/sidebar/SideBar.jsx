@@ -1,24 +1,29 @@
 import Icon, { Stack } from '@mdi/react';
 import { mdiHomeAnalytics, mdiCalendarAlertOutline, mdiAccountGroup, mdiEmailFastOutline, mdiBellOutline, mdiCogOutline, mdiLogout, mdiAccount } from '@mdi/js';
 import SideBarNavLink from './SideBarNavLink';
-
+import { useLocation } from 'react-router-dom';
 
 function SideBar () {
+    const location = useLocation();
+    const checkIfPageIsActive = (path) => {
+        return location.pathname === path;
+    }
+
   return (
       <nav className="sidebar__nav">
         <aside className="w-1/10 px-12">
             <div className="bg-white rounded-full w-20 ml-auto mr-auto flex flex-col flex-grow justify-between items-center my-2 shadow-md p-2">
-                <SideBarNavLink href="/">
-                    <Icon path={mdiHomeAnalytics} size={2}/>
+                <SideBarNavLink href="/" isActive={checkIfPageIsActive('/')}>
+                    <Icon path={mdiHomeAnalytics} size={2} />
                 </SideBarNavLink>
-                <SideBarNavLink href="/calendar">
-                    <Icon path={mdiCalendarAlertOutline} size={2}/>
+                <SideBarNavLink href="/calendar" isActive={checkIfPageIsActive('/calendar')}>
+                    <Icon path={mdiCalendarAlertOutline} size={2} />
                 </SideBarNavLink>
-                <SideBarNavLink href="/leads">
-                    <Icon path={mdiAccountGroup} size={2}/>
+                <SideBarNavLink href="/leads" isActive={checkIfPageIsActive('/leads')}>
+                    <Icon path={mdiAccountGroup} size={2} />
                 </SideBarNavLink>
-                <SideBarNavLink href="/inbox">
-                    <Icon path={mdiEmailFastOutline} size={2}/>
+                <SideBarNavLink href="/inbox" isActive={checkIfPageIsActive('/inbox')}>
+                    <Icon path={mdiEmailFastOutline} size={2} />
                 </SideBarNavLink>
             </div>
 

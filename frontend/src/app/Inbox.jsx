@@ -12,11 +12,11 @@ function Inbox () {
         2
       </AppGridCard>
 
-      <AppGridCard>
+      <AppGridCard isLarge={true}>
         3
       </AppGridCard>
       
-      <AppGridCard isLarge={true}>
+      <AppGridCard>
         4
       </AppGridCard>
     </AppGridLayout>

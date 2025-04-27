@@ -12,11 +12,11 @@ function Dashboard() {
         2
       </AppGridCard>
 
-      <AppGridCard isLarge={true}>
+      <AppGridCard>
         3
       </AppGridCard>
 
-      <AppGridCard>
+      <AppGridCard isLarge={true}>
         4
       </AppGridCard>
     </AppGridLayout>

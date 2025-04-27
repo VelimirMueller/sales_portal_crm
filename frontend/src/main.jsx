@@ -9,11 +9,11 @@ import './App.css'
 const root = document.getElementById("root");
 
 ReactDOM.createRoot(root).render(
-  <AppLayout>
-    <BrowserRouter>
+  <BrowserRouter>
+    <AppLayout>
       <div className="w-full h-full">
         <AppRoutes />
       </div>
-    </BrowserRouter>
-  </AppLayout>
+    </AppLayout>
+  </BrowserRouter>
 );

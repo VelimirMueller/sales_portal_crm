@@ -11,7 +11,7 @@ function MenuButton() {
     return (
         <>
         <button onClick={toggle} className="w-44 h-full rounded-full text-xl text-gray-50 bg-gray-900 shadow-xl">
-            Menu: {isClicked.toString()}
+            Menu
         </button>
   
         {isClicked && (

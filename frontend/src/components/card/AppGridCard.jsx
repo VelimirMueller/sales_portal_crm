@@ -1,8 +1,13 @@
-function AppGridCard({ children, isLarge = false }) {
+function AppGridCard({ children, isLarge = false, isHighlighted = false }) {
     return (
-      <div className={`h-90 bg-white rounded-xl shadow-xl ${isLarge ? 'col-span-2': 'col-span-1'}`}>
-        {children}
-      </div>
+      <div
+      className={`h-86 bg-white rounded-xl shadow-xl 
+        ${isLarge ? "col-span-2" : "col-span-1"}
+        ${isHighlighted ? "bg-yellow-200" : ""}
+      `}
+    >
+      {children}
+    </div>
     );
   }
   
