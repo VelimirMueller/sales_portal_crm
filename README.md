@@ -2,6 +2,7 @@
 # 🚀 Getting Started – Sales Portal CRM
 
 A minimal CRM frontend built with **React**, **Vite**, and **Tailwind CSS**.
+
 Link to Figma Prototype: https://www.figma.com/proto/tuhAEVP7lLZwFMC0os6GRT/Sales-Portal?node-id=1-78&t=syDyaAJ9SKpH8NIs-1
 
 ---
