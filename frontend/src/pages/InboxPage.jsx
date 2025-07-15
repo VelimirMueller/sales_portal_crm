@@ -1,7 +1,7 @@
 import AppGridLayout from "../components/container/AppGridLayout";
 import AppGridCard from "../components/card/AppGridCard";
 
-function Inbox () {
+function InboxPage () {
   return (
     <AppGridLayout>
       <AppGridCard>
@@ -23,4 +23,4 @@ function Inbox () {
   );
 }
 
-export default Inbox;
+export default InboxPage;

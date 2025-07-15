@@ -1,7 +1,7 @@
 import AppGridLayout from "../components/container/AppGridLayout";
 import AppGridCard from "../components/card/AppGridCard";
 
-function Calendar() {
+function CalendarPage() {
     return (
       <AppGridLayout>
         <AppGridCard>
@@ -23,4 +23,4 @@ function Calendar() {
     );
   }
   
-  export default Calendar
+  export default CalendarPage

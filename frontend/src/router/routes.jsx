@@ -1,30 +1,30 @@
 import { Routes, Route } from "react-router";
-import Dashboard from '../app/Dashboard.jsx';
-import Calendar from "../app/Calendar.jsx";
-import Leads from "../app/Leads.jsx";
-import Inbox from "../app/Inbox.jsx";
+import DashboardPage from '../pages/DashboardPage.jsx';
+import CalendarPage from "../pages/CalendarPage.jsx";
+import LeadsPage from "../pages/LeadsPage.jsx";
+import InboxPage from "../pages/InboxPage.jsx";
 
 function AppRoutes () {
   return (
     <Routes>
-      <Route path="/" element={<Dashboard />} />
-      <Route index element={<Dashboard />} />
+      <Route path="/" element={<DashboardPage />} />
+      <Route index element={<DashboardPage />} />
 
-      <Route path="dashboard" element={<Dashboard />} />
+      <Route path="dashboard" element={<DashboardPage />} />
 
       <Route path="calendar">
-        <Route index element={<Calendar />} />
-        <Route path="calendar" element={<Calendar />} />
+        <Route index element={<CalendarPage />} />
+        <Route path="calendar" element={<CalendarPage />} />
       </Route>
 
       <Route path="leads">
-        <Route index element={<Leads />} />
-        <Route path="leads" element={<Leads />} />
+        <Route index element={<LeadsPage />} />
+        <Route path="leads" element={<LeadsPage />} />
       </Route>
 
       <Route path="inbox">
-        <Route index element={<Inbox />} />
-        <Route path="inbox" element={<Inbox />} />
+        <Route index element={<InboxPage />} />
+        <Route path="inbox" element={<InboxPage />} />
       </Route>
     </Routes>
   );

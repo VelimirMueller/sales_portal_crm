@@ -1,7 +1,7 @@
 import AppGridLayout from "../components/container/AppGridLayout";
 import AppGridCard from "../components/card/AppGridCard";
 
-function Leads() {
+function LeadsPage() {
     return (
       <AppGridLayout>
         <AppGridCard isLarge={true}>
@@ -23,4 +23,4 @@ function Leads() {
     );
   }
   
-  export default Leads
+  export default LeadsPage
