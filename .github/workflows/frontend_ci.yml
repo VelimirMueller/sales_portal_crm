@@ -26,3 +26,5 @@ jobs:
       - name: Run ESLint
         working-directory: frontend
         run: pnpm lint
+
+# extend: .github/workflows/frontend_ci.yml
