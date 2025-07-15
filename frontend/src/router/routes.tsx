@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router";
-import DashboardPage from '../pages/DashboardPage.jsx';
-import CalendarPage from "../pages/CalendarPage.jsx";
-import LeadsPage from "../pages/LeadsPage.jsx";
-import InboxPage from "../pages/InboxPage.jsx";
+import DashboardPage from '../pages/DashboardPage';
+import CalendarPage from "../pages/CalendarPage";
+import LeadsPage from "../pages/LeadsPage";
+import InboxPage from "../pages/InboxPage";
 
 function AppRoutes () {
   return (

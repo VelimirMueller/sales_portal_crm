@@ -1,5 +1,5 @@
-import NavGreeting from './NavGreeting';
-import NavLogo from './NavLogo';
+import NavGreeting from './NavGreeting.tsx';
+import NavLogo from './NavLogo.js';
 import MenuButton from './MenuButton';
 
 function NavBar () {
