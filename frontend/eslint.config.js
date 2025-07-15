@@ -9,14 +9,15 @@ import tsParser from '@typescript-eslint/parser'
 export default [
   { ignores: ['dist'] },
   {
-    files: ['**/*.{ts,tsx,js,jsx}'],
+     files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions: {
-      parser: tsParser,
       ecmaVersion: 'latest',
       sourceType: 'module',
-      ecmaFeatures: { jsx: true },
-      globals: {
-        ...globals.browser,
+      globals: globals.browser,
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        jsx: true  // Enable JSX parsing here
       },
     },
     plugins: {
