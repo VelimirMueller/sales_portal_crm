@@ -1,5 +1,3 @@
-# .github/workflows/lint.yml
-
 name: Lint
 
 on:
@@ -10,7 +8,6 @@ on:
 
 jobs:
   lint:
-    name: ESLint (Node.js ${{ matrix.node-version }})
     runs-on: ubuntu-latest
 
     strategy:
@@ -18,16 +15,20 @@ jobs:
         node-version: [18.x, 20.x, 22.x]
 
     steps:
-      - name: 🛎️ Checkout code
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: 🔧 Use Node.js ${{ matrix.node-version }}
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+          cache-dependency-path: frontend/pnpm-lock.yaml
 
-      - name: 📦 Install dependencies
-        run: npm install --frozen-lockfile
+      - name: Install dependencies
+        working-directory: frontend
+        run: pnpm install --frozen-lockfile
 
-      - name: 🧹 Run ESLint
-        run: npm run lint
+      - name: Run ESLint
+        working-directory: frontend
+        run: pnpm lint
