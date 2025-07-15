@@ -1,4 +1,4 @@
-# .github/workflows/frontend_ci.yml
+# .github/workflows/lint.yml
 
 name: Lint
 
@@ -25,10 +25,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+          cache: 'npm'
 
       - name: 📦 Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm install --frozen-lockfile
 
-      - name: 🧹 Lint code
-        run: pnpm lint
+      - name: 🧹 Run ESLint
+        run: npm lint
