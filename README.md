@@ -10,10 +10,11 @@ A minimal CRM frontend built with **React**, **Vite**, and **Tailwind CSS**.
 - [pnpm](https://pnpm.io/) or `npm` / `yarn`
 
 ---
-
-## 📦 Install
+## 1 clone repo
+## 2 📦 Install
 
 ```bash
+cd frontend
 pnpm install
 # or
 npm install
