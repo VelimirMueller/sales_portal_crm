@@ -1,11 +1,11 @@
-import Icon, { Stack } from '@mdi/react';
+import Icon from '@mdi/react';
 import { mdiHomeAnalytics, mdiCalendarAlertOutline, mdiAccountGroup, mdiEmailFastOutline, mdiBellOutline, mdiCogOutline, mdiLogout, mdiAccount } from '@mdi/js';
 import SideBarNavLink from './SideBarNavLink';
 import { useLocation } from 'react-router-dom';
 
 function SideBar () {
     const location = useLocation();
-    const checkIfPageIsActive = (path) => {
+    const checkIfPageIsActive = (path: string): boolean => {
         return location.pathname === path;
     }
 
